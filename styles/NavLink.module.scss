@@ -1,0 +1,26 @@
+@import 'variables';
+
+.specialLi {
+  padding: 4px 20px;
+  list-style: none;
+  border-bottom: 4px solid $primary;
+  border-top: 4px solid $primary;
+  width: 120px;
+  text-align: center;
+  a {
+    list-style: none;
+    font-weight: bold;
+    color: $white;
+    text-transform: capitalize;
+    text-decoration: none;
+    &:hover {
+      color: $secondary;
+      cursor: pointer;
+    }
+  }
+}
+
+.currentPage {
+  border-bottom: 4px solid $darkprimary;
+  border-top: 4px solid $darkprimary;
+}
