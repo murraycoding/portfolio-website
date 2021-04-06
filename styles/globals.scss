@@ -1,16 +1,202 @@
+@import 'variables';
+
+/* fonts */
+@font-face {
+  font-family: 'Fira Code Medium';
+  src: url('../public/fonts/FiraCode-Medium.ttf');
+}
+@font-face {
+  font-family: 'Fira Code Bold';
+  src: url('../public/fonts/FiraCode-Bold.ttf');
+}
+@font-face {
+  font-family: 'PassionOne';
+  src: url('../public/fonts/PassionOne-Regular.ttf')
+}
+@font-face {
+  font-family: 'Reenie Beanie';
+  src:url('../public/fonts/ReenieBeanie-Regular.ttf')
+}
+/* headings */
+h1, h2, h3, h4, h5 {
+  margin: 0px;
+  font-family: 'PassionOne';
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+h1 { font-size: 2.488rem;}
+h2 { font-size: 2.074rem;}
+h3 { font-size: 1.728rem;}
+h4 { font-size: 1.44rem;}
+h5 { font-size: 1.2rem;}
+
+/* font sizes */
+small, .text-small {
+  font-size: 0.833rem;
+  font-family: 'arial';
+}
+.text-large {
+  font-size: 1.728rem;
+}
+.text-xlarge {
+  font-size: 2.488rem;
+}
+
+/* links */
+a {
+  text-decoration: underline;
+  color: $black;
+  &:hover {
+    color: $primary;
+  }
+}
+
+p {
+  margin-left: 20px;
+}
+/* buttons */
+button {
+  background-color: $secondary;
+  color: $black;
+  font-family: 'Fira Code Bold';
+  padding: 10px;
+  text-transform: lowercase;
+  font-weight: bold;
+  border-radius: 4px;
+  border: 0px;
+  box-shadow: 1px 1px 2px grey;
+  cursor: pointer;
+  margin: 8px;
+  transition: all 0.2s ease-in;
+  &:hover {
+    background-color: $lightsecondary;
+    transform: translateY(-3px);
+  }
+  a {
+    text-decoration: none;
+    color: $black;
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+/* general styles */
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Layout Styles */
+header {
+  grid-area: header;
+  margin-top: 50px;
+  background-color: $primary;
+  padding: 5px;
+  display: grid;
+  grid-template-areas: ". navlinks ldh extlinks .";
+  grid-template-columns: 1fr 3fr auto 3fr 1fr;
+  align-items: center;
 }
+
+footer {
+  grid-area: footer;
+}
+
+nav {
+  justify-self: center;
+  grid-area: navlinks;
+}
+
+/* Form Styles */
+input {
+  border-radius: 4px;
+  margin: 8px;
+  outline: 0px;
+  box-shadow: 2px 2px 5px grey;
+  padding: 10px;
+  background-color: $white;
+  border: 0px;
+  &:hover {
+    background-color: $lightsecondary;
+  }
+  &:focus {
+    background-color: $secondary;
+  }
+  &::placeholder {
+    color: $lightprimary;
+    opacity: 0.5;
+  }
+}
+
 
 * {
   box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Fira Code Medium';
+}
+
+/* utility classes */
+.underline {
+  height: 6px;
+  border-radius: 3px;
+  background-color: $primary;
+  transition: all 0.3s ease-in;
+  &:hover {
+    background-color: $secondary;
+  }
+}
+
+.mainContent {
+  grid-area: content;
+  padding-top: 20px;
+  max-width: 1400px;
+  justify-self: center;
+  width: 100%;
+}
+
+.pageContent {
+  display: grid;
+  grid-template-areas:"header header header" ". content ." "footer footer footer";
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 50px auto 50px;
+}
+
+.cardHolder {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  padding: 15px;
+  gap: 12px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.noTransform {
+  transform: none;
+}
+
+.noShawdow {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 1500px) {
+  header {
+    grid-template-areas:
+    "ldh ldh"
+    "navlinks extlinks"
+    ;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  header {
+    grid-template-areas:
+    "ldh" "navlinks" "extlinks";
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto;
+  }
 }
