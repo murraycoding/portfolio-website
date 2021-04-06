@@ -7,12 +7,8 @@ export default function NavLink({ name }) {
   const router = useRouter()
   let currentPage = false
 
-  console.log("This is a test")
-  console.log(router.pathname)
-
   // checks to see if the current page matches with the link
   if (router.pathname == `/${name}`) {
-    console.log("The page name matches")
     currentPage = true
   }
 
