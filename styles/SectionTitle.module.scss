@@ -1,0 +1,21 @@
+@import 'variables';
+
+.sectionTitleClass {
+  margin-left: 20px;
+  width: fit-content;
+  h2 {
+    padding: 0px 10px;
+    text-transform: capitalize;
+  }
+  div {
+    height: 8px;
+    border-radius: 4px;
+    background-color: $primary;
+    transition: all 0.2s ease-in;
+  }
+  &:hover {
+    div {
+      background-color: $secondary;
+    }
+  }
+}
