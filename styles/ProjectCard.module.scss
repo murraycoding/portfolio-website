@@ -1,0 +1,97 @@
+@import 'variables';
+
+.projectCard {
+  border-radius: 15px;
+  box-shadow: 5px 5px 6px grey;
+  transition: all $transtime ease-in;
+  background-color: $primary;
+  button {
+    width: 100px;
+  }
+  &:hover {
+    transform: translate(-3px, -5px);
+    box-shadow: 10px 10px 15px grey;
+    >div {
+      background: $lightprimary;
+    }
+  }
+}
+
+.projectCardInset {
+  border-radius: 15px;
+  transition: none;
+  overflow: hidden;
+  box-shadow: inset 5px 5px 6px $darkprimary;
+  background-color: $primary;
+  transition: all $transtime ease-in;
+  button {
+    width: 100px;
+  }
+  &:hover {
+    box-shadow: inset 10px 10px 15px $darkprimary;
+    background-color: $lightprimary;
+  }
+}
+
+.innerBox {
+  border-radius: 15px;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "title"
+    "links"
+    "bottom";
+  grid-template-rows: 1fr auto 3fr;
+  color: $white;
+  background-color: $primary;
+  padding: 15px;
+  transition: all $transtime ease-in;
+}
+
+.innerBoxInset {
+  justify-self: center;
+  background-color: transparent;
+  transition: all $transtime ease-in;
+  &:hover {
+    transform: translate(3px,5px);
+  }
+}
+
+.projectTitle {
+  grid-area: title;
+  text-align: center;
+}
+
+.projectLinks {
+  grid-area: links;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectCardBottom {
+  grid-area: bottom;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  @media screen and (max-width:750px) {
+    flex-direction: column;
+  }
+}
+
+.projectTech {
+text-align: center;
+  p {
+    margin: 0px;
+    padding: 5px;
+  }
+}
+
+.projectLogo {
+  div {
+    background-color: white;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+}
