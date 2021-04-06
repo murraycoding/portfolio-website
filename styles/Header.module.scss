@@ -1,0 +1,92 @@
+@import 'variables';
+
+.navbutton {
+  box-shadow: 1px 1px 2px $darkprimary;
+  margin: 20px;
+  a {
+    text-decoration: none;
+  }
+}
+
+.navlinks {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding-inline-start: 0px;
+}
+
+.logodiv {
+  height: 150px;
+  width: 150px;
+  border: 12px solid $primary;
+  border-radius: 50%;
+  color: $white;
+  justify-self: center;
+  background-color: $white;
+  position: absolute;
+  align-self: center;
+}
+
+.logoDivHolder {
+  grid-area: ldh;
+  display: grid;
+  grid-template-areas: "first logo last";
+  grid-template-columns: 1fr 150px 1fr;
+  position: relative;
+  color: $white;
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+
+.first {
+  grid-area: first;
+  justify-self: right;
+  padding-right: 20px;
+  font-family: 'Reenie Beanie';
+  padding-left: 10px;
+}
+
+.last {
+  grid-area: last;
+  justify-self: left;
+  padding-left: 20px;
+  font-family: 'Reenie Beanie';
+  padding-right: 10px;
+}
+
+.externalLinks {
+  grid-area: extlinks;
+  color: $white;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+}
+
+.socialLinks {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* delete this later */
+.temp {
+  height: 30px;
+  width: 30px;
+  background-color: $primary;
+  border: 3px solid white;
+  border-radius: 50%;
+  &:hover {
+    background-color: $secondary;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .externalLinks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
