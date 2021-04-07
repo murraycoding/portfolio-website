@@ -27,6 +27,13 @@
   background-color: $white;
   position: absolute;
   align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 80px;
+    width: 80px;
+  }
 }
 
 .logoDivHolder {
@@ -44,16 +51,20 @@
   grid-area: first;
   justify-self: right;
   padding-right: 20px;
-  font-family: 'Reenie Beanie';
+  font-family: 'PassionOne';
+  // font-family: 'Reenie Beanie';
   padding-left: 10px;
+  letter-spacing: 3px;
 }
 
 .last {
   grid-area: last;
   justify-self: left;
   padding-left: 20px;
-  font-family: 'Reenie Beanie';
+  font-family: 'PassionOne';
+  // font-family: 'Reenie Beanie';
   padding-right: 10px;
+  letter-spacing: 3px;
 }
 
 .externalLinks {

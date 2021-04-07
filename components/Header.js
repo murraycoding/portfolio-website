@@ -16,7 +16,9 @@ export default function Header() {
       </nav>
       <div className={HeaderStyles.logoDivHolder}>
         <div className={`${HeaderStyles.first} text-xlarge`}>Brian</div>
-        <div className={HeaderStyles.logodiv} />
+        <div className={HeaderStyles.logodiv}>
+          <img src="/personal-logo.svg" />
+        </div>
         <div className={`${HeaderStyles.last} text-xlarge`}>Murray</div>
       </div>
       <div className={HeaderStyles.externalLinks}>
