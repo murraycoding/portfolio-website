@@ -30,9 +30,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition:  background-color $transtime linear;
   img {
     height: 80px;
     width: 80px;
+  }
+  &:hover {
+    background-color: lightgrey;
+    cursor: pointer;
   }
 }
 
@@ -83,14 +88,22 @@
 
 /* delete this later */
 .temp {
-  height: 30px;
-  width: 30px;
-  background-color: $primary;
+  height: 40px;
+  width: 40px;
+  background-color: $white;
   border: 3px solid white;
   border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   &:hover {
     background-color: $secondary;
     cursor: pointer;
+    border-color: $secondary;
+  }
+  img {
+    height: 34px;
+    width: 34px;
   }
 }
 

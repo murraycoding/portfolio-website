@@ -16,16 +16,30 @@ export default function Header() {
       </nav>
       <div className={HeaderStyles.logoDivHolder}>
         <div className={`${HeaderStyles.first} text-xlarge`}>Brian</div>
+        <Link href="/">
         <div className={HeaderStyles.logodiv}>
           <img src="/personal-logo.svg" />
         </div>
+        </Link>
         <div className={`${HeaderStyles.last} text-xlarge`}>Murray</div>
       </div>
       <div className={HeaderStyles.externalLinks}>
         <div className={HeaderStyles.socialLinks}>
-          <div className={HeaderStyles.temp} />
-          <div className={HeaderStyles.temp} />
-          <div className={HeaderStyles.temp} />
+          <a href="https://github.com/murraycoding" target="_blank">
+            <div className={HeaderStyles.temp}>
+              <img src="/github.svg" />
+            </div>
+          </a>
+          <a href="https://github.com/murraycoding" target="_blank">
+            <div className={HeaderStyles.temp}>
+              <img src="/twitter2.svg" />
+            </div>
+          </a>
+          <a href="https://github.com/murraycoding" target="_blank">
+            <div className={HeaderStyles.temp}>
+              <img src="/linkedin.svg" />
+            </div>
+          </a>
         </div>
         <button className={HeaderStyles.navbutton}><Link href="/contact">Contact Me</Link></button>
       </div>
