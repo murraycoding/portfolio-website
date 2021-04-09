@@ -8,9 +8,9 @@ export default function Header() {
       <nav>
         <ul className={HeaderStyles.navlinks}>
           <NavLink name="about"/>
-          <NavLink name="work" />
+          <NavLink name="projects" />
           <NavLink name="services" />
-          <NavLink name="skills" />
+          <NavLink name="resume" />
           <NavLink name="blog" />
         </ul>
       </nav>
@@ -30,12 +30,12 @@ export default function Header() {
               <img src="/github.svg" />
             </div>
           </a>
-          <a href="https://github.com/murraycoding" target="_blank">
+          <a href="https://twitter.com/BrianMDeveloper" target="_blank" className="externalLink">
             <div className={HeaderStyles.temp}>
               <img src="/twitter2.svg" />
             </div>
           </a>
-          <a href="https://github.com/murraycoding" target="_blank">
+          <a href="https://www.linkedin.com/in/brian-murray-3622b0188/" target="_blank" className="externalLink">
             <div className={HeaderStyles.temp}>
               <img src="/linkedin.svg" />
             </div>

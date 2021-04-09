@@ -1,16 +1,19 @@
 /* Colors */
-$blue: #0d47a1;
-$darkblue: #002171;
+// $blue: #0d47a1;
+$blue: #47589F;
+$darkblue: #0F2C5C;
 $lightblue: #5472d3;
-$yellow: #ffeb3b;
-$lightyellow: #ffff72;
+$yellow: #D3A518;
+$lightyellow: #f2d372;
 $black: #000000;
-$white: #ffffff;
+$white: #E8EFFF;
+$red: #AB4834;
+$accent: #00AED7;
 
 $primary: $blue;
 $darkprimary: $darkblue;
 $lightprimary: $lightblue;
-$secondary: $yellow;
+$secondary: $accent;
 $lightsecondary: $lightyellow;
 
 $large: 1.704rem;

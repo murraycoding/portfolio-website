@@ -6,7 +6,7 @@
      width="1.94667in" height="1.47667in"
      viewBox="0 0 584 443">
   <path id="Logo Top"
-        fill="#002171" stroke="none" fill-rule="evenodd"
+        fill="#47589F" stroke="none" fill-rule="evenodd"
         d="M 130.00,221.00
            C 130.00,221.00 130.00,69.00 130.00,69.00
              130.00,69.00 146.50,36.75 180.50,22.25
@@ -42,7 +42,7 @@
              429.56,154.06 429.62,265.69 429.62,265.69
              429.62,265.69 367.19,243.56 367.19,243.56 Z"/>
   <path id="Logo Bottom"
-        fill="#0d47a1" stroke="black" stroke-width="1" fill-rule="evenodd"
+        fill="#0F2C5C" stroke="black" stroke-width="1" fill-rule="evenodd"
         d="M 1.00,11.00
            C 1.00,11.00 117.00,11.00 117.00,11.00
              117.00,11.00 117.00,219.00 117.00,219.00

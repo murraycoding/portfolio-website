@@ -74,7 +74,7 @@
 
 .externalLinks {
   grid-area: extlinks;
-  color: $white;
+  color: red;
   justify-self: center;
   display: flex;
   align-items: center;
@@ -84,6 +84,9 @@
   display: flex;
   flex-direction: row;
   gap: 20px;
+  div {
+    color: $primary;
+  }
 }
 
 /* delete this later */
@@ -96,6 +99,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: red;
   &:hover {
     background-color: $secondary;
     cursor: pointer;
@@ -104,6 +108,9 @@
   img {
     height: 34px;
     width: 34px;
+  }
+  svg {
+    fill: $primary;
   }
 }
 
