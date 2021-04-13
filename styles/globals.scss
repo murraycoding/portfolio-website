@@ -57,7 +57,7 @@ p {
 }
 /* buttons */
 button {
-  background-color: $secondary;
+  background-color: $yellow;
   color: $black;
   font-family: 'Fira Code Bold';
   padding: 10px;
@@ -65,12 +65,12 @@ button {
   font-weight: bold;
   border-radius: 4px;
   border: 0px;
-  box-shadow: 1px 1px 2px grey;
+  box-shadow: 1px 1px 2px $darkprimary;
   cursor: pointer;
   margin: 8px;
   transition: all 0.2s ease-in;
   &:hover {
-    background-color: $lightsecondary;
+    background-color: $lightyellow;
     transform: translateY(-3px);
   }
   a {
@@ -134,6 +134,8 @@ input {
 
 
 * {
+  --buttonColor: $yellow;
+  --buttonHoverColor: $lightyellow;
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Fira Code Medium';
