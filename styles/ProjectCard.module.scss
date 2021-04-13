@@ -4,15 +4,15 @@
   border-radius: 15px;
   box-shadow: 5px 5px 6px grey;
   transition: all $transtime ease-in;
-  background-color: $primary;
+  background-color: $grey;
   button {
     width: 100px;
   }
   &:hover {
     transform: translate(-3px, -5px);
-    box-shadow: 10px 10px 15px grey;
+    box-shadow: 10px 10px 15px $lightaqua;
     >div {
-      background: $lightprimary;
+      background: $greyshadow;
     }
   }
 }
@@ -21,15 +21,15 @@
   border-radius: 15px;
   transition: none;
   overflow: hidden;
-  box-shadow: inset 5px 5px 6px $darkprimary;
-  background-color: $primary;
+  box-shadow: inset 5px 5px 6px $greyshadow;
+  background-color: $grey;
   transition: all $transtime ease-in;
   button {
     width: 100px;
   }
   &:hover {
-    box-shadow: inset 10px 10px 15px $darkprimary;
-    background-color: $lightprimary;
+    box-shadow: inset 10px 10px 15px $aqua;
+    background-color: $lightaqua;
   }
 }
 
@@ -43,7 +43,7 @@
     "bottom";
   grid-template-rows: 1fr auto 3fr;
   color: $white;
-  background-color: $primary;
+  background-color: $grey;
   padding: 15px;
   transition: all $transtime ease-in;
 }

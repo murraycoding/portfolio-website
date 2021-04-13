@@ -3,8 +3,8 @@
 .specialLi {
   padding: 4px 20px;
   list-style: none;
-  border-bottom: 4px solid $primary;
-  border-top: 4px solid $primary;
+  border-bottom: 4px solid $blue;
+  border-top: 4px solid $blue;
   width: 120px;
   text-align: center;
   a {
@@ -14,13 +14,13 @@
     text-transform: capitalize;
     text-decoration: none;
     &:hover {
-      color: $secondary;
+      color: $aqua;
       cursor: pointer;
     }
   }
 }
 
 .currentPage {
-  border-bottom: 4px solid $darkprimary;
-  border-top: 4px solid $darkprimary;
+  border-bottom: 4px solid $blueshadow;
+  border-top: 4px solid $blueshadow;
 }

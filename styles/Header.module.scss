@@ -1,7 +1,7 @@
 @import 'variables';
 
 .navbutton {
-  box-shadow: 1px 1px 2px $darkprimary;
+  box-shadow: 1px 1px 2px $blueshadow;
   margin: 20px;
   a {
     text-decoration: none;
@@ -20,7 +20,7 @@
 .logodiv {
   height: 150px;
   width: 150px;
-  border: 12px solid $primary;
+  border: 12px solid $blue;
   border-radius: 50%;
   color: $white;
   justify-self: center;
@@ -85,7 +85,7 @@
   flex-direction: row;
   gap: 20px;
   div {
-    color: $primary;
+    color: $blue;
   }
 }
 
@@ -101,16 +101,16 @@
   align-items: center;
   color: red;
   &:hover {
-    background-color: $secondary;
+    background-color: $aqua;
     cursor: pointer;
-    border-color: $secondary;
+    border-color: $aqua;
   }
   img {
     height: 34px;
     width: 34px;
   }
   svg {
-    fill: $primary;
+    fill: $blue;
   }
 }
 

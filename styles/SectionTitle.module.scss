@@ -10,12 +10,12 @@
   div {
     height: 8px;
     border-radius: 4px;
-    background-color: $primary;
+    background-color: $darkaqua;
     transition: all 0.2s ease-in;
   }
   &:hover {
     div {
-      background-color: $secondary;
+      background-color: $lightaqua;
     }
   }
 }
