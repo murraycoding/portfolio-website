@@ -1,0 +1,85 @@
+@import 'variables';
+
+.projectCard {
+  box-shadow: 3px 3px 5px $greyshadow;
+  padding: 0px;
+  padding-bottom: 47px;
+  background-color: $grey;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease-in;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  p {
+    margin: 0px;
+    padding: 8px;
+    text-align: center;
+  }
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 6px 4px 8px $greyshadow;
+  }
+}
+
+.projectTitle {
+  font-family: 'PassionOne';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  text-transform: capitalize;
+}
+
+.projectDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.projectLinks {
+  background-color: $blue;
+  padding: 6px 10px 6px 0px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.projectLink {
+  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  color: $white;
+  text-decoration: none;
+  height: 30px;
+  span {
+    font-size: 0.833rem;
+  }
+  &:hover div {
+    cursor: pointer;
+    background-color: $aqua;
+    border-color: $aqua;
+  }
+}
+
+.temp {
+  height: 30px;
+  width: 30px;
+  background-color: $white;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $blueshadow;
+  svg {
+    height: 34px;
+    width: 34px;
+    overflow: hidden;
+  }
+}
