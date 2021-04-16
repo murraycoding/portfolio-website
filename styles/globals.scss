@@ -93,7 +93,6 @@ body {
 /* Layout Styles */
 header {
   grid-area: header;
-  margin-top: 50px;
   background-color: $blue;
   padding: 5px;
   display: grid;
@@ -121,13 +120,13 @@ input {
   background-color: $white;
   border: 0px;
   &:hover {
-    background-color: $lightaqua
+    background-color: $greyshadow
   }
   &:focus {
-    background-color: $aqua;
+    background-color: $grey;
   }
   &::placeholder {
-    color: $grey;
+    color: $black;
     opacity: 0.5;
   }
 }
