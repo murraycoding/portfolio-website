@@ -3,8 +3,6 @@ import NewProjectCard from '../components/NewProjectCard'
 
 export default function ProjectsPage() {
   return (
-    <>
-      <SectionTitle name="projects"/>
       <div className="cardHolder">
         <NewProjectCard 
         title="murray math tutoring"
@@ -27,6 +25,5 @@ export default function ProjectsPage() {
         github="https://github.com/murraycoding/murray-math-tutoring"
         link="https://www.murraymathtutoring.com" />
       </div>
-    </>
   )
 }
