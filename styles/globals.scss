@@ -94,7 +94,6 @@ body {
 header {
   grid-area: header;
   background-color: $blue;
-  padding: 5px;
   display: grid;
   grid-template-areas: ". navlinks ldh extlinks .";
   grid-template-columns: 1fr 3fr auto 3fr 1fr;
@@ -119,6 +118,53 @@ input {
   padding: 10px;
   background-color: $white;
   border: 0px;
+  transition: all $transtime ease-in;
+  &:hover {
+    background-color: $greyshadow
+  }
+  &:focus {
+    background-color: $grey;
+  }
+  &::placeholder {
+    color: $black;
+    opacity: 0.5;
+  }
+}
+
+label {
+  padding-left: 20px;
+}
+
+select {
+  border-radius: 4px;
+  margin: 8px;
+  outline: 0px;
+  box-shadow: 2px 2px 5px grey;
+  padding: 10px;
+  background-color: $white;
+  border: 0px;
+  transition: all $transtime ease-in;
+  &:hover {
+    background-color: $greyshadow
+  }
+  &:focus {
+    background-color: $grey;
+  }
+  &::placeholder {
+    color: $black;
+    opacity: 0.5;
+  }
+}
+
+textarea {
+  border-radius: 4px;
+  margin: 8px;
+  outline: 0px;
+  box-shadow: 2px 2px 5px grey;
+  padding: 10px;
+  background-color: $white;
+  border: 0px;
+  transition: all $transtime ease-in;
   &:hover {
     background-color: $greyshadow
   }
@@ -136,19 +182,6 @@ input {
   box-sizing: border-box;
   font-size: 16px;
   font-family: 'Fira Code Medium';
-}
-
-svg {
-  height: 100px;
-}
-
-img {
-  color: $blue;
-}
-
-// don't remember what this is for...
-.externalLink {
-  color: red;
 }
 
 
@@ -182,7 +215,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
   padding: 15px;
-  gap: 12px;
+  gap: 15px;
   flex-wrap: wrap;
   justify-content: center;
 }
