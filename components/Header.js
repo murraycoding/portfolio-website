@@ -106,7 +106,7 @@ export default function Header() {
      width="4.33333in" height="4.33333in"
      viewBox="0 0 390 390">
   <path id="Twitter BG"
-        fill="currentColor" stroke="none" fill-rule="evenodd"
+        fill="currentColor" stroke="none"
         d="M 178.00,0.21
            C 178.00,0.21 205.00,0.21 205.00,0.21
              225.59,0.03 254.10,7.57 273.00,15.72

@@ -1,27 +1,30 @@
 import client from '../../client'
 import BlockContent from '@sanity/block-content-to-react'
 
-const Post = (props) => {
-  
+export default function Post({ ...info }) {
+
+  console.log(info.body[0].children[0].text)
+
   return (
-    <article>
-      <h1>{props.slug.current}</h1>
-      <BlockContent
-        blocks={body}
-        projectId={client.config().projectId}
-        dataset={client.config().dataset}
-      />
-    </article>
+    <>
+      <p>{info.body[0].children[0].text}</p>
+    </>
   )
 }
 
 Post.getInitialProps = async function(context) {
-  // It's important to default the slug so that it doesn't return "undefined"
-  const { body = "" } = context.query
-  const { slug = "" } = context.query
-  return await client.fetch(`
-    *[_type == "post" && slug.current == $slug][0]{slug, title, body}
-  `, { slug, body })
-}
+  console.log("calling")
+  const { body = ""} = context.query
+  const info = await client.fetch(`*[_type == "post"][0]`,{ body })
 
-export default Post
+  // // It's important to default the slug so that it doesn't return "undefined"
+  // const { body = "" } = context.query
+  // const { slug = "" } = context.query
+  // return await client.fetch(`
+  //   *[_type == "post" && slug.current == $slug][0]
+  // `, { slug, body })
+
+  console.log(info)
+
+  return info
+}
