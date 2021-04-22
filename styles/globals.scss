@@ -1,40 +1,55 @@
-@import 'variables';
+@import "variables";
 
 /* fonts */
 @font-face {
-  font-family: 'Fira Code Medium';
-  src: url('../public/fonts/FiraCode-Medium.ttf');
+  font-family: "Fira Code Medium";
+  src: url("../public/fonts/FiraCode-Medium.ttf");
 }
 @font-face {
-  font-family: 'Fira Code Bold';
-  src: url('../public/fonts/FiraCode-Bold.ttf');
+  font-family: "Fira Code Bold";
+  src: url("../public/fonts/FiraCode-Bold.ttf");
 }
 @font-face {
-  font-family: 'PassionOne';
-  src: url('../public/fonts/PassionOne-Regular.ttf')
+  font-family: "PassionOne";
+  src: url("../public/fonts/PassionOne-Regular.ttf");
 }
 @font-face {
-  font-family: 'Reenie Beanie';
-  src:url('../public/fonts/ReenieBeanie-Regular.ttf')
+  font-family: "Reenie Beanie";
+  src: url("../public/fonts/ReenieBeanie-Regular.ttf");
 }
 /* headings */
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
   margin: 0px;
-  font-family: 'PassionOne';
+  font-family: "PassionOne";
   letter-spacing: 2px;
   font-weight: 400;
 }
 
-h1 { font-size: 2.488rem;}
-h2 { font-size: 2.074rem;}
-h3 { font-size: 1.728rem;}
-h4 { font-size: 1.44rem;}
-h5 { font-size: 1.2rem;}
+h1 {
+  font-size: 2.488rem;
+}
+h2 {
+  font-size: 2.074rem;
+}
+h3 {
+  font-size: 1.728rem;
+}
+h4 {
+  font-size: 1.44rem;
+}
+h5 {
+  font-size: 1.2rem;
+}
 
 /* font sizes */
-small, .text-small {
+small,
+.text-small {
   font-size: 0.833rem;
-  font-family: 'arial';
+  font-family: "arial";
 }
 .text-large {
   font-size: 1.728rem;
@@ -59,7 +74,7 @@ p {
 button {
   background-color: $aqua;
   color: $black;
-  font-family: 'Fira Code Bold';
+  font-family: "Fira Code Bold";
   padding: 10px;
   text-transform: lowercase;
   font-weight: bold;
@@ -120,7 +135,7 @@ input {
   border: 0px;
   transition: all $transtime ease-in;
   &:hover {
-    background-color: $greyshadow
+    background-color: $greyshadow;
   }
   &:focus {
     background-color: $grey;
@@ -145,7 +160,7 @@ select {
   border: 0px;
   transition: all $transtime ease-in;
   &:hover {
-    background-color: $greyshadow
+    background-color: $greyshadow;
   }
   &:focus {
     background-color: $grey;
@@ -166,7 +181,7 @@ textarea {
   border: 0px;
   transition: all $transtime ease-in;
   &:hover {
-    background-color: $greyshadow
+    background-color: $greyshadow;
   }
   &:focus {
     background-color: $grey;
@@ -177,13 +192,11 @@ textarea {
   }
 }
 
-
 * {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: 'Fira Code Medium';
+  font-family: "Fira Code Medium";
 }
-
 
 /* utility classes */
 .underline {
@@ -206,14 +219,14 @@ textarea {
 
 .pageContent {
   display: grid;
-  grid-template-areas:"header header header" ". content ." "footer footer footer";
+  grid-template-areas: "header header header" ". content ." "footer footer footer";
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 50px auto 50px;
 }
 
 .cardHolder {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
   padding: 15px;
   gap: 15px;
   flex-wrap: wrap;
@@ -228,12 +241,21 @@ textarea {
   box-shadow: none;
 }
 
+.blogTitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  span {
+    padding-left: 30px;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   header {
     grid-template-areas:
-    "ldh ldh"
-    "navlinks extlinks"
-    ;
+      "ldh ldh"
+      "navlinks extlinks";
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto;
   }
@@ -241,9 +263,13 @@ textarea {
 
 @media screen and (max-width: 750px) {
   header {
-    grid-template-areas:
-    "ldh" "navlinks" "extlinks";
+    grid-template-areas: "ldh" "navlinks" "extlinks";
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
+  }
+  .blogTitle {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
