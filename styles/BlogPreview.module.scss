@@ -1,0 +1,28 @@
+@import "variables";
+
+.blogPreviewContainer {
+  display: grid;
+  grid-template-areas: "title date" "content content";
+  grid-template-rows: 30% 70%;
+  grid-template-columns: 60% 40%;
+  gap: 10px;
+  background-color: $grey;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.blogTitle {
+  grid-area: title;
+}
+
+.blogDatePosted {
+  grid-area: date;
+  align-self: center;
+  justify-self: center;
+}
+
+.blogContent {
+  grid-area: content;
+}
+
+// TO-DO: update this component to include space for an image as well.

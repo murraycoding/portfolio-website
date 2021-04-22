@@ -1,7 +1,14 @@
+import BlogPreview from '../components/BlogPreview'
+
 export default function BlogPage() {
   return (
-    // TO-DO: get data from sanity
-    // make pages of 10 blog previous at a time. 
+    <>
     <p>This is the blog page.</p>
+    <BlogPreview
+      title="Brian"
+      date="cheese"
+      content="This is the best content in the whole wide world."
+    />
+    </>
   )
 }
