@@ -251,6 +251,11 @@ textarea {
   }
 }
 
+svg {
+  height: fit-content;
+  width: fit-content;
+}
+
 @media screen and (max-width: 1500px) {
   header {
     grid-template-areas:
