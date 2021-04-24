@@ -7,6 +7,8 @@ export default function BlogPage({ ...info }) {
   // creates an array of posts to turn into components
   const infoArray = Object.values(info)
 
+  console.log(info)
+
   const blogPreviews = infoArray.map(
     (post) => {
       console.log("This is here")
@@ -14,13 +16,13 @@ export default function BlogPage({ ...info }) {
         title = {post.title}
         date = {post._createdAt}
         content = {post.body[0].children[0].text}
+        slug = {post.slug.current}
       />
     }
   )
 
   return (
     <>
-    <p>This is the blog page.</p>
     {blogPreviews}
     </>
   )

@@ -2,9 +2,8 @@
 
 .blogPreviewContainer {
   display: grid;
-  grid-template-areas: "title date" "content content";
-  grid-template-rows: 30% 70%;
-  grid-template-columns: 60% 40%;
+  grid-template-areas: "title date link" "content content content";
+  grid-template-columns: auto 1fr auto;
   gap: 10px;
   background-color: $grey;
   padding: 10px;
@@ -20,11 +19,21 @@
 .blogDatePosted {
   grid-area: date;
   align-self: center;
-  justify-self: center;
+  justify-self: left;
+  margin-left: 20px;
 }
 
 .blogContent {
   grid-area: content;
+  margin-top: 0;
+}
+
+.blogLink {
+  grid-area: link;
+  width: 120px;
+  &:hover {
+    box-shadow: 0px 3px 5px $greyshadow;
+  }
 }
 
 // TO-DO: update this component to include space for an image as well.
