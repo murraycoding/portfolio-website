@@ -13,6 +13,7 @@ export default function Post({ ...info }) {
         <span className="small">{datePosted.toLocaleDateString()}</span>
       </div>
       <BlockContent
+        className="blogParagraph"
         blocks={info.body}
       />
     </>

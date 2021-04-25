@@ -10,6 +10,7 @@
   border-radius: 6px;
   box-shadow: 2px 2px 5px $greyshadow;
   margin: 15px 0px;
+  text-align: justify;
 }
 
 .blogTitle {
@@ -26,6 +27,7 @@
 .blogContent {
   grid-area: content;
   margin-top: 0;
+  margin: 0px 20px 15px 20px;
 }
 
 .blogLink {
@@ -33,6 +35,28 @@
   width: 120px;
   &:hover {
     box-shadow: 0px 3px 5px $greyshadow;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .blogPreviewContainer {
+    grid-template-areas: "title" "date" "content" "link";
+    justify-items: center;
+    grid-template-columns: auto;
+  }
+  .blogDatePosted {
+    text-align: center;
+    display: block;
+    justify-self: center;
+    margin: 0px;
+  }
+  .blogContent {
+    margin: 0px;
+    text-align: center;
+    padding: 0px 8px;
+    p {
+      margin: 0px 15px;
+    }
   }
 }
 

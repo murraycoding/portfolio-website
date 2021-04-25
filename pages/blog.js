@@ -7,11 +7,9 @@ export default function BlogPage({ ...info }) {
   // creates an array of posts to turn into components
   const infoArray = Object.values(info)
 
-  console.log(info)
-
+  // uses the map function to turn each piece of information to a component.
   const blogPreviews = infoArray.map(
     (post) => {
-      console.log("This is here")
       return <BlogPreview
         title = {post.title}
         date = {post._createdAt}
@@ -30,7 +28,7 @@ export default function BlogPage({ ...info }) {
 
 BlogPage.getInitialProps = async function(context) {
   //returns a list of all of the posts
-  const info = await client.fetch(`*[_type == "post"]`)
+  const info = await client.fetch(`*[_type == "post"] | order(_createdAt desc)`)
 
   //returns the information to the component.
   return info

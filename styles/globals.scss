@@ -256,6 +256,18 @@ svg {
   width: fit-content;
 }
 
+.blogParagraph {
+  line-height: 1.5rem;
+  background: $white;
+  padding: 10px 30px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px $greyshadow;
+  p {
+    text-align: justify;
+    margin-left: 0px;
+  }
+}
+
 @media screen and (max-width: 1500px) {
   header {
     grid-template-areas:
@@ -276,5 +288,12 @@ svg {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-bottom: 15px;
+    div {
+      margin-left: 0px;
+    }
+    span {
+      padding-left: 0px;
+    }
   }
 }

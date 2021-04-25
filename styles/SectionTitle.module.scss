@@ -1,9 +1,10 @@
-@import 'variables';
+@import "variables";
 
 .sectionTitleClass {
   margin-left: 20px;
   width: fit-content;
   margin-bottom: 10px;
+  text-align: center;
   h2 {
     padding: 0px 10px;
     text-transform: capitalize;
@@ -18,5 +19,11 @@
     div {
       background-color: $lightaqua;
     }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .sectionTitleClass {
+    margin: 0px;
   }
 }
