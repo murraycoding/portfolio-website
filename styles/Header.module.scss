@@ -1,4 +1,4 @@
-@import 'variables';
+@import "variables";
 
 .navbutton {
   box-shadow: 1px 1px 2px $blueshadow;
@@ -30,7 +30,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition:  background-color $transtime linear;
+  transition: background-color $transtime linear;
   img {
     height: 80px;
     width: 80px;
@@ -53,21 +53,17 @@
 .first {
   grid-area: first;
   justify-self: right;
-  padding-right: 20px;
-  font-family: 'PassionOne';
-  // font-family: 'Reenie Beanie';
-  padding-left: 10px;
+  font-family: "PassionOne";
   letter-spacing: 3px;
+  padding: 10px 20px 0px 10px;
 }
 
 .last {
   grid-area: last;
   justify-self: left;
-  padding-left: 20px;
-  font-family: 'PassionOne';
-  // font-family: 'Reenie Beanie';
-  padding-right: 10px;
+  font-family: "PassionOne";
   letter-spacing: 3px;
+  padding: 10px 10px 0px 20px;
 }
 
 .externalLinks {
