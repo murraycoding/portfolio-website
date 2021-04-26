@@ -1,0 +1,28 @@
+@import "variables";
+
+.footerContentTitle {
+  background-color: $blue;
+  padding: 5px;
+  display: block;
+  border-radius: 3px;
+  position: relative;
+  top: -10px;
+  color: $white;
+  transform: rotate(-1.5deg);
+  box-shadow: 3px 3px 5px $greyshadow;
+  width: fit-content;
+}
+
+.footerContent {
+  background-color: $white;
+  border-radius: 3px;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-columns: auto;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  padding: 10px 20px 20px 20px;
+  box-shadow: 3px 3px 5px $greyshadow;
+  text-align: center;
+}
