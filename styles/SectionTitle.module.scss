@@ -1,5 +1,27 @@
 @import "variables";
 
+// .sectionTitleClass {
+//   margin-left: 20px;
+//   width: fit-content;
+//   margin-bottom: 10px;
+//   text-align: center;
+//   h2 {
+//     padding: 0px 10px;
+//     text-transform: capitalize;
+//   }
+//   div {
+//     height: 8px;
+//     border-radius: 4px;
+//     background-color: $darkaqua;
+//     transition: all 0.2s ease-in;
+//   }
+//   &:hover {
+//     div {
+//       background-color: $lightaqua;
+//     }
+//   }
+// }
+
 .sectionTitleClass {
   margin-left: 20px;
   width: fit-content;
@@ -8,17 +30,15 @@
   h2 {
     padding: 0px 10px;
     text-transform: capitalize;
+    color: $white;
+    background-color: $blue;
+    border-radius: 4px;
   }
   div {
-    height: 8px;
+    height: 0px;
     border-radius: 4px;
     background-color: $darkaqua;
     transition: all 0.2s ease-in;
-  }
-  &:hover {
-    div {
-      background-color: $lightaqua;
-    }
   }
 }
 
