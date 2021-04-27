@@ -1,7 +1,12 @@
-import FooterStyles from '../styles/Footer.module.scss'
+// import FooterStyles from '../styles/Footer.module.scss'
 import FooterContent from './FooterContent'
+import client from '../client'
 
-export default function Footer(){
+export default function Footer({...info}){
+
+  console.log("This is the info")
+  console.log(info)
+
   return (
     <footer>
       <div className="cardHolder">
@@ -12,7 +17,7 @@ export default function Footer(){
           My freelance experience is tailored to help small businesses better their website to attract more customers.
         </FooterContent>
         <FooterContent title="Twitter">
-          This is the content.
+          I use twitter to share my experience, make connections with other developers and learn from others about the latest tech.
         </FooterContent>
         <FooterContent title="My Latest Project">
           This is the content.
@@ -20,4 +25,12 @@ export default function Footer(){
       </div>
     </footer>
   )
+}
+
+// fetch project information
+Footer.getInitialProps = async function(context) {
+  //returns a list of all of the posts
+  const projects = await client.fetch(`*[_type == "project"]`)
+  //returns the information to the component.
+  return projects
 }
