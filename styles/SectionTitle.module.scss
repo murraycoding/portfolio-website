@@ -40,6 +40,12 @@
     background-color: $darkaqua;
     transition: all 0.2s ease-in;
   }
+  &:hover {
+    h2 {
+      transition: all 0.4s ease-in;
+      color: $aqua;
+    }
+  }
 }
 
 @media screen and (max-width: 750px) {
