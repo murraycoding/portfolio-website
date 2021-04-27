@@ -17,6 +17,11 @@
   font-family: "Reenie Beanie";
   src: url("../public/fonts/ReenieBeanie-Regular.ttf");
 }
+@font-face {
+  font-family: "Staatliches";
+  src: url("../public/fonts/Staatliches-Regular.ttf");
+}
+
 /* headings */
 h1,
 h2,
@@ -24,7 +29,7 @@ h3,
 h4,
 h5 {
   margin: 0px;
-  font-family: "PassionOne";
+  font-family: "Staatliches";
   letter-spacing: 2px;
   font-weight: 400;
 }
