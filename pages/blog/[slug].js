@@ -4,6 +4,7 @@ import SectionTitle from '../../components/SectionTitle'
 
 export default function Post({ ...info }) {
 
+  // converts the date created to a date object
   const datePosted = new Date(info._createdAt);
 
   return (
